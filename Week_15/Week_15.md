@@ -100,7 +100,7 @@ It's not much of a game yet, so let's go ahead and add some obstacles. We're usi
 ```javascript
 function runGame(intervalScale){
 
-  for (var i = pipes.length-1; i >= 0; i--) {
+  for (let i = pipes.length-1; i >= 0; i--) {
     pipes[i].show();
     pipes[i].update();
   }
@@ -150,7 +150,7 @@ This is what our runGame() function looks like now:
 ```javascript
 function runGame(intervalScale){
 
-  for (var i = pipes.length-1; i >= 0; i--) {
+  for (let i = pipes.length-1; i >= 0; i--) {
     pipes[i].show();
     pipes[i].update();
 
@@ -351,7 +351,7 @@ This is what our runGame() and testLevel() functions look like now:
 function runGame(intervalScale){
     testLevel();
 
-  for (var i = pipes.length-1; i >= 0; i--) {
+  for (let i = pipes.length-1; i >= 0; i--) {
     pipes[i].show();
     pipes[i].update();
 
